@@ -136,10 +136,96 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p>&copy; 2025 TK Kartika VIII - 39. Semua hak dilindungi.</p>
+    <div class="container">
+        <p>&copy; 2025 TK Kartika VIII - 39. Semua hak dilindungi.</p>
+        <!-- Button to open the pop-up -->
+        <button id="referencesButton">Sumber Referensi</button>
+    </div>
+
+    <!-- The Pop-up -->
+    <div id="referencesPopup" class="popup-sumber">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <ul>
+                <li><a href="https://tkkartikaviii39.wordpress.com/" target="_blank">Beranda</a></li>
+                <li><a href="https://tkkartikaviii39.wordpress.com/profil/" target="_blank">Profil</a></li>
+                <li><a href="https://tkkartikaviii39.wordpress.com/tata-tertib/" target="_blank">Tata Tertib</a></li>
+                <li><a href="https://tkkartikaviii39.wordpress.com/about/" target="_blank">Tentang</a></li>
+                <li><a href="https://tkkartikaviii39.wordpress.com/kontak/" target="_blank">Kontak</a></li>
+                <li><a href="https://tkkartikaviii39.wordpress.com/galery/" target="_blank">Galeri</a></li>
+            </ul>
         </div>
-    </footer>
+    </div>
+</footer>
+
+<!-- Add the following styles and scripts -->
+<style>
+/* The Pop-up (background) */
+.popup-sumber {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/* Pop-up Content */
+.popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+</style>
+
+<script>
+// Get the pop-up
+var popup = document.getElementById("referencesPopup");
+
+// Get the button that opens the pop-up
+var btn = document.getElementById("referencesButton");
+
+// Get the <span> element that closes the pop-up
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the pop-up 
+btn.onclick = function() {
+    popup.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the pop-up
+span.onclick = function() {
+    popup.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the pop-up, close it
+window.onclick = function(event) {
+    if (event.target == popup) {
+        popup.style.display = "none";
+    }
+}
+</script>
 
     <script src="js/script.js"></script>
 </body>
