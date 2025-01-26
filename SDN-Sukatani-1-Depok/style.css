@@ -135,44 +135,6 @@ footer {
     padding: 10px 0;
 }
 
-/* File: style.css */
-/* Tambahkan keyframes untuk animasi */
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
-
-@keyframes slideIn {
-    from { transform: translateX(-50px); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
-}
-
-@keyframes scaleUp {
-    from { transform: scale(0.9); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
-}
-
-@keyframes fadeUp {
-    from { transform: translateY(20px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
-}
-
-/* Hero Animations */
-.fade-in {
-    animation: fadeIn 1.5s ease-in forwards;
-}
-.slide-in {
-    animation: slideIn 1.5s ease-out forwards;
-}
-.scale-up {
-    animation: scaleUp 1.5s ease-in-out forwards;
-}
-
-/* Services Animation */
-.fade-up {
-    animation: fadeUp 1.5s ease-out forwards;
-}
-
 /* Contact Form */
 .contact {
     padding: 50px 20px;
