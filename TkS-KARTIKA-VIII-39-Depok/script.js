@@ -49,6 +49,25 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }, { threshold: 0.1 });
 
+    // Show popup
+    referenceButton.addEventListener("click", () => {
+        popup.classList.add("visible");
+    });
+
+    // Hide popup
+    closePopup.addEventListener("click", () => {
+        popup.classList.remove("visible");
+    });
+
+    // Hide popup when clicking outside the content
+    popup.addEventListener("click", (e) => {
+        if (e.target === popup) {
+            popup.classList.remove("visible");
+        }
+    });
+});
+
+
     sections.forEach(section => {
         section.classList.add("hidden"); // Add hidden class initially
         observer.observe(section);
