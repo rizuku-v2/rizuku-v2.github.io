@@ -3,8 +3,8 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Modern Website Loaded!");
 
-    // Ambil elemen <p> yang memiliki teks hak cipta
-    const copyrightElement = document.querySelector('p');
+    // Ambil elemen <p> yang memiliki id 'footer-copyright'
+    const copyrightElement = document.getElementById('footer-copyright');
     
     // Dapatkan tahun saat ini
     const currentYear = new Date().getFullYear();
