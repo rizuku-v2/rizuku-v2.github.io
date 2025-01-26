@@ -28,16 +28,16 @@
         <!-- Hero Section -->
         <section id="home" class="hero">
             <div class="container">
-                <h1>Welcome to SDN Sukatani 1</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at nisl felis. Curabitur vel est nec purus sodales volutpat.</p>
-                <a href="#about" class="btn">Learn More</a>
+                <h1 class="fade-in">Welcome to SDN Sukatani 1</h1>
+                <p class="slide-in">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at nisl felis. Curabitur vel est nec purus sodales volutpat.</p>
+                <a href="#about" class="btn scale-up">Learn More</a>
             </div>
         </section>
 
         <!-- About Section -->
         <section id="about" class="about">
             <div class="container">
-                <h2>About Us</h2>
+                <h2 class="fade-in">About Us</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vehicula lectus id odio viverra, a tempor est facilisis.</p>
             </div>
         </section>
@@ -45,21 +45,35 @@
         <!-- Services Section -->
         <section id="services" class="services">
             <div class="container">
-                <h2>Our Services</h2>
+                <h2 class="fade-in">Our Services</h2>
                 <div class="service-cards">
-                    <div class="card">
+                    <div class="card fade-up">
                         <h3>Education</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
-                    <div class="card">
+                    <div class="card fade-up">
                         <h3>Extracurricular</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
-                    <div class="card">
+                    <div class="card fade-up">
                         <h3>Community</h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+                <p id="formResponse"></p>
             </div>
         </section>
     </main>
