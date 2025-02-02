@@ -22,12 +22,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-function openPopup() {
-            document.getElementById('popup').style.display = 'block';
-            document.getElementById('overlay').style.display = 'block';
+function FZygoatPopupOpen() {
+            document.getElementById('FZygoatPopup-modal').style.display = 'block';
+            document.getElementById('FZygoatPopup-overlay').style.display = 'block';
         }
 
-        function closePopup() {
-            document.getElementById('popup').style.display = 'none';
-            document.getElementById('overlay').style.display = 'none';
+        function FZygoatPopupClose() {
+            document.getElementById('FZygoatPopup-modal').style.display = 'none';
+            document.getElementById('FZygoatPopup-overlay').style.display = 'none';
         }
