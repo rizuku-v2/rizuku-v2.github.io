@@ -169,18 +169,18 @@ footer {
     background-color: #388e3c;
 }
 
-.container {
+.FZygoatPopup-container {
             text-align: center;
             padding: 10px;
             background-color: #f8f8f8;
             position: relative;
         }
 
-        .copyright {
+        .FZygoatPopup-copyright {
             margin-bottom: 10px;
         }
 
-        .btn-referensi {
+        .FZygoatPopup-btn {
             padding: 10px 15px;
             font-size: 16px;
             background-color: #007bff;
@@ -191,11 +191,11 @@ footer {
             transition: 0.3s;
         }
 
-        .btn-referensi:hover {
+        .FZygoatPopup-btn:hover {
             background-color: #0056b3;
         }
 
-        .popup {
+        .FZygoatPopup-modal {
             display: none;
             position: fixed;
             left: 50%;
@@ -211,12 +211,12 @@ footer {
             text-align: center;
         }
 
-        .popup h2 {
+        .FZygoatPopup-modal h2 {
             margin-top: 0;
             font-size: 20px;
         }
 
-        .popup ul {
+        .FZygoatPopup-list {
             list-style: none;
             padding: 0;
             margin: 10px 0;
@@ -224,20 +224,20 @@ footer {
             overflow-y: auto;
         }
 
-        .popup ul li {
+        .FZygoatPopup-list li {
             margin: 5px 0;
         }
 
-        .popup ul li a {
+        .FZygoatPopup-list li a {
             text-decoration: none;
             color: #007bff;
         }
 
-        .popup ul li a:hover {
+        .FZygoatPopup-list li a:hover {
             text-decoration: underline;
         }
 
-        .close-popup {
+        .FZygoatPopup-close {
             background: #dc3545;
             color: white;
             border: none;
@@ -248,11 +248,11 @@ footer {
             margin-top: 10px;
         }
 
-        .close-popup:hover {
+        .FZygoatPopup-close:hover {
             background: #c82333;
         }
 
-        .overlay {
+        .FZygoatPopup-overlay {
             display: none;
             position: fixed;
             top: 0;
@@ -264,11 +264,11 @@ footer {
         }
 
         @media (max-width: 480px) {
-            .popup {
+            .FZygoatPopup-modal {
                 width: 95%;
             }
 
-            .btn-referensi {
+            .FZygoatPopup-btn {
                 width: 100%;
                 font-size: 14px;
             }
