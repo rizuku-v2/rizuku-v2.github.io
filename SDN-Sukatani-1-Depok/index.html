@@ -80,17 +80,17 @@
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <p class="copyright">&copy; 2025 SDN Sukatani 1. All rights reserved.</p>
-            <button class="btn-referensi" onclick="openPopup()">Sumber Referensi</button>
+        <div class="FZygoatPopup-container">
+            <p class="FZygoatPopup-copyright">&copy; 2025 SDN Sukatani 1. All rights reserved.</p>
+            <button class="FZygoatPopup-btn" onclick="FZygoatPopupOpen()">Sumber Referensi</button>
         </div>
     </footer>
 
-    <div class="overlay" id="overlay" onclick="closePopup()"></div>
+    <div class="FZygoatPopup-overlay" id="FZygoatPopup-overlay" onclick="FZygoatPopupClose()"></div>
 
-    <div class="popup" id="popup">
+    <div class="FZygoatPopup-modal" id="FZygoatPopup-modal">
         <h2>Sumber Referensi</h2>
-        <ul>
+        <ul class="FZygoatPopup-list">
             <li><a href="https://sdnsukatani1cmgdpk.wordpress.com/" target="_blank">Website SDN Sukatani 1</a></li>
             <li><a href="https://sdnsukatani1cmgdpk.wordpress.com/tentang/" target="_blank">Tentang Sekolah</a></li>
             <li><a href="https://sdnsukatani1cmgdpk.wordpress.com/kontak/" target="_blank">Kontak</a></li>
@@ -102,7 +102,7 @@
             <li><a href="https://ban-pdm.id/satuanpendidikan/20228953" target="_blank">BAN PDM</a></li>
             <li><a href="https://dapo.dikdasmen.go.id/sekolah/7986AE7EC0E36C4E6120" target="_blank">Dapodik</a></li>
         </ul>
-        <button class="close-popup" onclick="closePopup()">Tutup</button>
+        <button class="FZygoatPopup-close" onclick="FZygoatPopupClose()">Tutup</button>
     </div>
 
     <script src="./script.js"></script>
